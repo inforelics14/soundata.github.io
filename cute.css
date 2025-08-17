@@ -1,11 +1,10 @@
-
-.top{
-    background-image:url(./img/Captura\ de\ pantalla\ 2025-08-16\ 214646.png) ;
-    height: 6rem;
-    width: 100%;
-
-} 
 body{
     display: flex;
+    flex-direction: column;
     margin: 0;
+    gap: 3rem ;
+}
+.test{
+    background:linear-gradient(to right,#0a4cb0,#675bca,#cb6ce6) ;
+    height: 5rem;
 }
