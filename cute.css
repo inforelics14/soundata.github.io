@@ -1,0 +1,43 @@
+.aqua {
+    color: aqua;
+    background-color: black;
+    font-family:'Brush Script MT', cursive;
+    font-size: 30px;
+}
+button {
+    height: 30px;
+    width: 60px;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 0;
+}
+body{
+    background-color:#EDE8D0 ;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.center-div{
+    position: relative;
+    top: 20rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+} 
+.bottom{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 0;
+    
+}
+.top{
+    background-image:url(./img/Captura\ de\ pantalla\ 2025-08-16\ 214646.png) ;
+    height: 6rem;
+    width: 100rem;
+    
+}
