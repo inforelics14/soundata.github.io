@@ -3,9 +3,3 @@ body{
 }
 .albums{
     align-items: center;
-
-}
-.cover-image{
-    padding: 0.5;
-    background-color:linear-gradient ;
-}
