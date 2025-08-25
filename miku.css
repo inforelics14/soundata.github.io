@@ -1,5 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
     background-color: #262525
 }
 .albums{
     align-items: center;
+}
+.leftpart{
+    display:flex;
+    justify-content: space-around;
+}
+
+.cover-image{
+
+    background: linear-gradient(to right,#0a4cb0,#cb6ce6);
+    padding:1.0rem;
+    border-radius: 7%;
+}
+.Info{
+    display: flex;
+    flex-direction: center; 
+    background: #8d54ff;
+    border-radius: 7%;
+    width: 10rem;
+    height: 4rem;
+    justify-content: center;
+    gap: 0.2rem;
+    font-family: 'open Sans';
+    color: white;
+    font-weight: 900;
+    
+}
+.p{
+    display: flex;
+    flex-direction: start;
+    font-family: 'open Sans';
+    color: white;
+    font-weight: 900;
+}
