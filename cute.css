@@ -20,7 +20,6 @@ body{
     padding: 5px;
     display: flex;
     align-items: center;
-
     gap: 10px;
     
 }
@@ -207,5 +206,21 @@ p{
     background-color: black;
     padding-top: 1rem;
     padding-bottom: 1rem
+    
+}
+.cate{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.caja{
+    background: linear-gradient(to top,#f4773e, #963e15);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 10rem;
     
 }
