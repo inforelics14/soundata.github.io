@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
+    display: flex;
+    margin: 0;
     background-color: #262525
 
 }
@@ -22,10 +24,12 @@ body{
 }
 .left-part {
     gap: 10px;
-  flex: 2;   /* parte izquierda: pequeña */
+    flex: 2;
+
+
 }
 .middle-part {
-  flex: 3;   /* parte del medio: el doble de ancho que las otras */
+  flex: 3;
 }
 .right-part {
   flex: 1;
@@ -61,18 +65,22 @@ body{
 .cover-image{
     background: linear-gradient(to right,#0a4cb0,#cb6ce6);
     padding:1rem;
-    border-radius: 7%;
+    border-radius: 1.5rem;
     justify-content: center;
     height: 25rem;
     width: auto;
 }
-.Info-left-part{
-  display: flex;
-  width: 27rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
 
+.Info-left-part{
+    display: flex;
+    width: 27rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'open Sans', cursive;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
 
 }
 
@@ -98,26 +106,39 @@ body{
 }
 
 .left-inf{
+    display: flex;
+    flex:column;
     background-color: #8d54ff;
     border-radius: 1rem;
     height: 5rem;
     flex: 2;
+    padding-left: 1;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .right-inf {
+    display: flex;
     background: linear-gradient(to right,#0a4cb0,#cb6ce6);
     border-radius: 1rem;
     height: 5rem;
     flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
 }
 
 
 
 .bottom-inf{
+    display: flex;
     background-color: #8d54ff;
-    border-radius: 1rem;
+    border-radius: 0.9rem;
     width: 100%;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -126,10 +147,9 @@ body{
 
 
 
-
+/*middle part*/
 .middle-part{
     display: flex;
-    flex: column;
     background-color: #242323;
     text-align: flex-start;
     font-family: 'open Sans', cursive;
@@ -138,13 +158,40 @@ body{
     font-size: 1rem;
     overflow: hidden;
 }
-.information p{
-    background: linear-gradient(to right,#0a4cb0,#cb6ce6);
+
+.t{
+    width: 13rem;
+    font-size:1.3rem;
 
 }
+
+.Information h1{
+    margin: 0.8rem 0 0.8rem 0;
+    font-size: 2.5rem;
+}
+
+.sub-tittle {
+    display: flex;
+    flex: column;
+    height: 2rem;
+    gap: 4rem;
+}
+
+.Information p{
+    margin: 0;
+    padding: 3px;
+    border-radius: 10px;
+    background: linear-gradient(to right,#0a4cb0,#cb6ce6);
+}
+
 .Track-list{
     height: 3rem;
 }
+.Track-list p{
+    margin: 0.7rem 0 0.5rem 0;
+    font-size: 2rem;
+}
+
 
 .song-list {
     display: flex;
@@ -170,29 +217,23 @@ body{
     padding: 8px;
     border-radius: 10px;
     background-color: #8d54ff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .duration {
     width: 5rem;
-    text-align: right;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .percentage{
-    width: 5rem;
-    font-size: 1.5rem;
-
+    width: 4.5rem;
+    font-size: 1.7rem;
+    text-align: center;
+    border-radius: 10rem;
+    background: linear-gradient(to right,#0a4cb0,#cb6ce6);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -210,7 +251,7 @@ body{
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
-    overflow: hidden;
+    gap: 2rem;
 }
 .right-part pre{
     font-family: 'Open Sans', cursive;
@@ -218,14 +259,13 @@ body{
 
 }
 .genres{
-    justify-content: flex-start;
-    align-items: flex-start;
     text-align: left;
-    white-space: pre-wrap;
 
 }
 .genres-text{
     display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #8d54ff;
@@ -234,37 +274,42 @@ body{
     white-space: pre-wrap;
     margin: auto;
     height: 13rem;
-
 }
+
+.genres-text ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.genres-text li {
+  margin-bottom: 0.2rem;
+}
+
 .available{
     display: flex;
+    flex-direction: column;
     height: 25rem;
     padding: 10px;
     align-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: #8d54ff;
-    border-radius: 1rem;
-    justify-content: space-between;
-    
+    border-radius: 1rem;    
 }
 
 .av-text{
-    display: flex;
     align-items: flex-start;
     justify-content: space-around; 
-    width: 10rem;
-    height: 5rem;
-    padding: 10px;    
+    padding: 13px 0 25px 0;
+
 
 }
 
 .img-available{
-    display:flex;
-    flex-flow: row wrap;
-    gap: 1px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
+
 
 .available img{
     width: 5rem;
